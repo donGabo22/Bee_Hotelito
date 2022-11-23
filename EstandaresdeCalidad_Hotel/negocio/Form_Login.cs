@@ -55,7 +55,7 @@ namespace EstandaresdeCalidad_Hotel
 
         public string user;
         public string pass;
-        private void btnCalcular_Click(object sender, EventArgs e)
+        public void btnCalcular_Click(object sender, EventArgs e)
         {
             user = "admin";
             pass = "1234";
@@ -83,8 +83,8 @@ namespace EstandaresdeCalidad_Hotel
             }
 
 
-            
-           
+
+
 
 
         }
@@ -93,5 +93,21 @@ namespace EstandaresdeCalidad_Hotel
         {
 
         }
+
+        public bool validacion(string us, string pwd)
+        {
+            bool confirm = false;
+            if (us == "admin" && pwd == "1234")
+            {
+                confirm = true;
+                
+            }
+            else
+            {
+                confirm = false;
+            }
+            return confirm;
+        }
+
     }
 }

@@ -69,5 +69,14 @@ namespace EstandaresdeCalidad_Hotel.negocio
             Form_Factura2 form_Factura = new Form_Factura2();
             form_Factura.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        public static string something()
+        {
+            return "Algo";
+        }
     }
 }
